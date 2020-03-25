@@ -11,6 +11,7 @@
 }
 ```
 <hr>
+
 ## Countries
 ##### http://api-covid19-virus.herokuapp.com/api/countries
 ```json
