@@ -14,7 +14,8 @@
 ## Countries
 ##### http://api-covid19-virus.herokuapp.com/api/countries
 ```json
-{"country":"China","countryInfo":{"iso2":"CN","iso3":"CHN","_id":156,"lat":35,"long":105,"flag":null},"cases":81218,"cases_today":47,"deaths":3281,"deaths_today":4,"recovered":73650,"active_cases":4287,"critical":1399,"casesPerOneMillion":56,"deathsPerOneMillion":2}, // so on
+{"country":"China","countryInfo":{"iso2":"CN","iso3":"CHN","_id":156,"lat":35,"long":105,"flag":null},"cases":81218,"cases_today":47,"deaths":3281,"deaths_today":4,"recovered":73650,"active_cases":4287,"critical":1399,"casesPerOneMillion":56,"deathsPerOneMillion":2}
+... so on
 ```
 <hr>
 
