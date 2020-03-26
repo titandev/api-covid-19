@@ -1,40 +1,64 @@
 # Covid-19 (Coronavirus) API
 
-## Overview
-##### http://api-covid19-virus.herokuapp.com/api/overview
-```json
-{
-  "cases":422829,
-  "deaths":18907,
-  "recovered":109102,
-  "updated":1585109158060
-}
-```
+<h1>Endpoints</h1>
 <hr>
+<table>
+    <thead>
+        <tr>
+            <th>GET Request</th>
+            <th>Output</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><a href="http://api-covid19-virus.herokuapp.com/api/overview"
+                    rel="nofollow">http://api-covid19-virus.herokuapp.com/api/overview</a></td>
+            <td>Returns overview of cases, deaths and recovered</td>
+        </tr>
+        <hr>
+        <tr>
+            <td><a href="http://api-covid19-virus.herokuapp.com/api/countries"
+                    rel="nofollow">http://api-covid19-virus.herokuapp.com/api/countries</a></td>
+            <td>Returns data for all the countries regarding covid-19</td>
+        </tr>
+        <tr>
+            <td><a href="http://api-covid19-virus.herokuapp.com/api/countries/new%20zealand"
+                    rel="nofollow">http://api-covid19-virus.herokuapp.com/api/countries/country_name</a>
+            </td>
+            <td>Returns specific data for the specified country
+            </td>
+        </tr>
+        <tr>
+            <td><a href="http://api-covid19-virus.herokuapp.com/api/dates"
+                    rel="nofollow">http://api-covid19-virus.herokuapp.com/api/dates</a></td>
+            <td>Returns historic data for every country</td>
+        </tr>
+        <tr>
+            <td><a href="http://api-covid19-virus.herokuapp.com/api/dates/new%20zealand"
+                    rel="nofollow">http://api-covid19-virus.herokuapp.com/api/dates</a></td>
+            <td>Returns specific data for the specified country</td>
+        </tr>
 
-## Countries
-##### http://api-covid19-virus.herokuapp.com/api/countries
-```json
-{"country":"China","countryInfo":{"iso2":"CN","iso3":"CHN","_id":156,"lat":35,"long":105,"flag":null},"cases":81218,"cases_today":47,"deaths":3281,"deaths_today":4,"recovered":73650,"active_cases":4287,"critical":1399,"casesPerOneMillion":56,"deathsPerOneMillion":2}
-... so on
-```
-<hr>
+        <tr>
+            <td><a href="http://api-covid19-virus.herokuapp.com/api/rates"
+                    rel="nofollow">http://api-covid19-virus.herokuapp.com/api/rates</a></td>
+            <td>Returns fatality rates for for both ages and genders</td>
+        </tr>
+        <tr>
+            <td><a href="http://api-covid19-virus.herokuapp.com/api/rates/age"
+                    rel="nofollow">http://api-covid19-virus.herokuapp.com/api/rates/age</a></td>
+            <td>Returns fatality rates ages</td>
+        </tr>
+        <tr>
+            <td><a href="http://api-covid19-virus.herokuapp.com/api/rates/sex"
+                    rel="nofollow">http://api-covid19-virus.herokuapp.com/api/rates/sex</a></td>
+            <td>Returns fatality rates genders</td>
+        </tr>
 
-## Countries country
-##### http://api-covid19-virus.herokuapp.com/api/countries/new%20zealand
-```json
-  {"country":"New Zealand","countryInfo":{"iso2":"NZ","iso3":"NZL","_id":554,"lat":-41,"long":174,"flag":null},"cases":205,"cases_today":0,"deaths":0,"deaths_today":0,"recovered":22,"active_cases":183,"critical":0,"casesPerOneMillion":43,"deathsPerOneMillion":0}
-```
-<hr>
-
-## Dates
-##### http://api-covid19-virus.herokuapp.com/api/dates
-```json
-[{"country":"thailand","province":null,"timeline":{"cases":{"dates": "here"},"deaths":{"dates": "here"},"recovered":{"dates": "here"}}}... so on]
-```
-
-## Dates
-##### http://api-covid19-virus.herokuapp.com/api/dates/new%20zealand
-```json
-{"country":"New Zealand","standardizedCountryName":"new zealand","timeline":{"cases":{"1/22/20":0,"1/23/20":0,"1/24/20":0,"1/25/20":0,"1/26/20":0,"1/27/20":0,"1/28/20":0,"1/29/20":0,"1/30/20":0,"1/31/20":0,"2/1/20":0,"2/2/20":0,"2/3/20":0,"2/4/20":0,"2/5/20":0,"2/6/20":0,"2/7/20":0,"2/8/20":0,"2/9/20":0,"2/10/20":0,"2/11/20":0,"2/12/20":0,"2/13/20":0,"2/14/20":0,"2/15/20":0,"2/16/20":0,"2/17/20":0,"2/18/20":0,"2/19/20":0,"2/20/20":0,"2/21/20":0,"2/22/20":0,"2/23/20":0,"2/24/20":0,"2/25/20":0,"2/26/20":0,"2/27/20":0,"2/28/20":1,"2/29/20":1,"3/1/20":1,"3/2/20":1,"3/3/20":1,"3/4/20":3,"3/5/20":3,"3/6/20":4,"3/7/20":5,"3/8/20":5,"3/9/20":5,"3/10/20":5,"3/11/20":5,"3/12/20":5,"3/13/20":5,"3/14/20":6,"3/15/20":8,"3/16/20":8,"3/17/20":12,"3/18/20":20,"3/19/20":28,"3/20/20":39,"3/21/20":52,"3/22/20":66,"3/23/20":66},"deaths":{"1/22/20":0,"1/23/20":0,"1/24/20":0,"1/25/20":0,"1/26/20":0,"1/27/20":0,"1/28/20":0,"1/29/20":0,"1/30/20":0,"1/31/20":0,"2/1/20":0,"2/2/20":0,"2/3/20":0,"2/4/20":0,"2/5/20":0,"2/6/20":0,"2/7/20":0,"2/8/20":0,"2/9/20":0,"2/10/20":0,"2/11/20":0,"2/12/20":0,"2/13/20":0,"2/14/20":0,"2/15/20":0,"2/16/20":0,"2/17/20":0,"2/18/20":0,"2/19/20":0,"2/20/20":0,"2/21/20":0,"2/22/20":0,"2/23/20":0,"2/24/20":0,"2/25/20":0,"2/26/20":0,"2/27/20":0,"2/28/20":0,"2/29/20":0,"3/1/20":0,"3/2/20":0,"3/3/20":0,"3/4/20":0,"3/5/20":0,"3/6/20":0,"3/7/20":0,"3/8/20":0,"3/9/20":0,"3/10/20":0,"3/11/20":0,"3/12/20":0,"3/13/20":0,"3/14/20":0,"3/15/20":0,"3/16/20":0,"3/17/20":0,"3/18/20":0,"3/19/20":0,"3/20/20":0,"3/21/20":0,"3/22/20":0,"3/23/20":0},"recovered":{"1/22/20":0,"1/23/20":0,"1/24/20":0,"1/25/20":0,"1/26/20":0,"1/27/20":0,"1/28/20":0,"1/29/20":0,"1/30/20":0,"1/31/20":0,"2/1/20":0,"2/2/20":0,"2/3/20":0,"2/4/20":0,"2/5/20":0,"2/6/20":0,"2/7/20":0,"2/8/20":0,"2/9/20":0,"2/10/20":0,"2/11/20":0,"2/12/20":0,"2/13/20":0,"2/14/20":0,"2/15/20":0,"2/16/20":0,"2/17/20":0,"2/18/20":0,"2/19/20":0,"2/20/20":0,"2/21/20":0,"2/22/20":0,"2/23/20":0,"2/24/20":0,"2/25/20":0,"2/26/20":0,"2/27/20":0,"2/28/20":0,"2/29/20":0,"3/1/20":0,"3/2/20":0,"3/3/20":0,"3/4/20":0,"3/5/20":0,"3/6/20":0,"3/7/20":0,"3/8/20":0,"3/9/20":0,"3/10/20":0,"3/11/20":0,"3/12/20":0,"3/13/20":0,"3/14/20":0,"3/15/20":0,"3/16/20":0,"3/17/20":0,"3/18/20":0,"3/19/20":0,"3/20/20":0,"3/21/20":0,"3/22/20":0,"3/23/20":0}}}
-```
+        <tr>
+            <td><a href="http://api-covid19-virus.herokuapp.com/api/reports"
+                    rel="nofollow">http://api-covid19-virus.herokuapp.com/api/reports</a></td>
+            <td>Returns reports from https://who.int</td>
+        </tr>
+    </tbody>
+</table>
