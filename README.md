@@ -1,5 +1,3 @@
-# Covid-19 (Coronavirus) API
-
 <h1>Endpoints</h1>
 <table>
     <thead>
@@ -14,7 +12,6 @@
                     rel="nofollow">http://api-covid19-virus.herokuapp.com/api/overview</a></td>
             <td>Returns overview of cases, deaths and recovered</td>
         </tr>
-        <hr>
         <tr>
             <td><a href="http://api-covid19-virus.herokuapp.com/api/countries"
                     rel="nofollow">http://api-covid19-virus.herokuapp.com/api/countries</a></td>
@@ -24,8 +21,7 @@
             <td><a href="http://api-covid19-virus.herokuapp.com/api/countries/new%20zealand"
                     rel="nofollow">http://api-covid19-virus.herokuapp.com/api/countries/country_name</a>
             </td>
-            <td>Returns specific data for the specified country
-            </td>
+            <td>Returns specific data for the specified country</td>
         </tr>
         <tr>
             <td><a href="http://api-covid19-virus.herokuapp.com/api/dates"
@@ -34,10 +30,9 @@
         </tr>
         <tr>
             <td><a href="http://api-covid19-virus.herokuapp.com/api/dates/new%20zealand"
-                    rel="nofollow">http://api-covid19-virus.herokuapp.com/api/dates</a></td>
+                    rel="nofollow">http://api-covid19-virus.herokuapp.com/api/dates/country_name</a></td>
             <td>Returns specific data for the specified country</td>
         </tr>
-
         <tr>
             <td><a href="http://api-covid19-virus.herokuapp.com/api/rates"
                     rel="nofollow">http://api-covid19-virus.herokuapp.com/api/rates</a></td>
@@ -53,7 +48,6 @@
                     rel="nofollow">http://api-covid19-virus.herokuapp.com/api/rates/sex</a></td>
             <td>Returns fatality rates genders</td>
         </tr>
-
         <tr>
             <td><a href="http://api-covid19-virus.herokuapp.com/api/reports"
                     rel="nofollow">http://api-covid19-virus.herokuapp.com/api/reports</a></td>
