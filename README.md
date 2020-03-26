@@ -1,7 +1,6 @@
 # Covid-19 (Coronavirus) API
 
 <h1>Endpoints</h1>
-<hr>
 <table>
     <thead>
         <tr>
