@@ -1,3 +1,4 @@
+<h1><span style="color:red;">Deprecated</span></h1>
 <h1>Endpoints</h1>
 <table>
     <thead>
